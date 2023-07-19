@@ -1,0 +1,47 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {Programming} % Category
+    {Python, TypeScript, JavaScript, C++, Java} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {Frontend} % Category
+    {React, Vue, Angular, Redux, MUI, Bootstrap, Styled Components} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {Backend} % Category
+    {Node.js, REST, SQL, MongoDB / Atlas} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {Testing} % Category
+    {Cypress (Cucumber), Jest} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {DevOps} % Category
+    {CI/CD Pipelining} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {Cloud} % Category
+    {AWS, Google} % Skills
+%---------------------------------------------------------
+  \cvskill
+    {Tools} % Category
+    {Git, Figma, Netlify} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Languages} % Category
+    {German (C2), English (C1), Spanish (C1), French (B1)} % Skills
+
+%---------------------------------------------------------
+\end{cvskills}

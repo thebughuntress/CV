@@ -2,7 +2,7 @@
 
 This repository contains the LaTeX source code and PDF output of my CV, created using the [Awesome CV LaTeX Template for Cover Letter](https://github.com/posquit0/Awesome-CV).
 
-## Files
+## Documents
 
 Awesome CV is a LaTeX template for a CV(Curriculum Vitae), Résumé or Cover Letter inspired by Fancy CV. It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
 

@@ -16,8 +16,7 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-\input{constants/personal-information.tex}
-\input{constants/settings.tex}
+\input{constants/configurations.tex}
 
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
@@ -29,10 +28,6 @@
 \fontdir[fonts/]
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
 \definecolor{awesome}{HTML}{\COLOR}
 
 % Colors for text
@@ -43,7 +38,7 @@
 % \definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+\setbool{acvSectionColorHighlight}{\HIGHLIGHT_TITLES}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -53,7 +48,7 @@
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-
+\input{constants/personal-information.tex}
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[right,rectangle,noedge]{./photo/photo.jpg}
 \name{\FIRST_NAME}{\LAST_NAME}
@@ -95,12 +90,12 @@
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
 \input{resume/experience.tex}
-\input{resume/honors.tex}
-\input{resume/presentation.tex}
-\input{resume/writing.tex}
-\input{resume/committees.tex}
 \input{resume/education.tex}
-\input{resume/extracurricular.tex}
+%\input{resume/honors.tex}
+%\input{resume/presentation.tex}
+%\input{resume/writing.tex}
+%\input{resume/committees.tex}
+%\input{resume/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------

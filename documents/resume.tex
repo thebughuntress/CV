@@ -11,12 +11,14 @@
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
 
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
+\input{constants/personal-information.tex}
+\input{constants/settings.tex}
+
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
@@ -31,7 +33,7 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+\definecolor{awesome}{HTML}{\COLOR}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -51,30 +53,26 @@
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
+
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Antonia Alice}{Frey}
-\position{Software Engineer{\enskip\cdotp\enskip}}
-%\address{}
-
-%\mobile{}
-\email{antonia.frey@outlook.com}
-%\homepage{www.posquit0.com}
-\github{thisisfrey}
-\linkedin{aaf1}
-% \gitlab{}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
-
-\quote{``Be the change that you want to see in the world."}
-
+\photo[right,rectangle,noedge]{./photo/photo.jpg}
+\name{\FIRST_NAME}{\LAST_NAME}
+\position{\POSITION}
+%\address{\ADRESS}
+\mobile{\MOBILE}
+\email{\EMAIL}
+\github{\GITHUB}
+\linkedin{\LINKEDIN}
+\homepage{\HOMEPAGE}
+% \gitlab{\GITLAB}
+% \stackoverflow{\SO_ID}{\SO_NAME}
+% \twitter{\TWITTER}
+% \skype{\SKYPE}
+% \reddit{\REDDIT_ID}
+% \medium{\MEDIUM_ID}
+% \googlescholar{\GOOGLE_SCHOLAR_ID}{\GOOGLE_SCHOLAR_NAME}
+% \extrainfo{\EXTRA_INFO}
+\quote{\QUOTE}
 
 %-------------------------------------------------------------------------------
 \begin{document}

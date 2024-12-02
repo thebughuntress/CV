@@ -283,7 +283,11 @@
 
 % Defines writer's homepage (optional)
 % Usage: \homepage{<url>}
-\newcommand*{\homepage}[1]{\def\@homepage{#1}}
+\newcommand*{\homepage}[2]{%
+  \def\@homepageA{#1}%
+  \def\@homepageB{#2}%
+}
+
 
 % Defines writer's github (optional)
 % Usage: \github{<github-nick>}
@@ -467,11 +471,11 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email}%
         }%
-      \ifthenelse{\isundefined{\@homepage}}%
+      \ifthenelse{\isundefined{\@homepageA}}%
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
+          \href{\@homepageA}{\faHome\acvHeaderIconSep\@homepageB}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
@@ -554,8 +558,8 @@
 \newcommand*{\makecvfooter}[3]{%
   \fancyfoot{}
   \fancyfoot[L]{\footerstyle{#1}}
-  \fancyfoot[C]{\footerstyle{#2}}
-  \fancyfoot[R]{\footerstyle{#3}}
+  %\fancyfoot[C]{\footerstyle{#3}}
+  \fancyfoot[R]{\footerstyle{#2}}
 }
 
 % Define a section for CV
